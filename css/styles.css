@@ -3,14 +3,16 @@
 /* акцент #2196F3 */
 /* цвет фона основной #FFFFFF */
 /* цвет фона вторичный #F5F4FA */
+/*главный цвет иконок #afb1b8;*/
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --primary-icon-color: #afb1b8;
 }
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -261,7 +263,7 @@ body {
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  color: #ffffff;
+  color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -359,7 +361,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   width: 206px;
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
 }
 .social-link {
   display: flex;
@@ -369,7 +371,7 @@ body {
   align-items: center;
 }
 .social-link .icon {
-  fill: #afb1b8;
+  fill: var(--primary-icon-color);
 }
 .social-link:hover,
 .social-link:focus {
@@ -378,7 +380,7 @@ body {
 }
 .social-link:hover .icon,
 .social-link:focus .icon {
-  fill: #ffffff;
+  fill: var(--primary-white-color);
 }
 .list-advantages:not(:last-child) {
   margin-right: 30px;
@@ -404,6 +406,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 90px) / 4);
 }
 .bcg-card:not(:last-child) {
   margin-right: 30px;
@@ -439,7 +442,7 @@ body {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
 }
 /* Clients section*/
 .clients {
@@ -468,11 +471,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
   width: 100%;
   height: 100%;
-  color: #afb1b8;
+  color: var(--primary-icon-color);
 }
 
 .clients-link:focus,
@@ -484,7 +487,7 @@ body {
   fill: var(--accent-color);
 }
 .icon {
-  fill: #afb1b8;
+  fill: var(--primary-icon-color);
 }
 .container-portfolio {
   margin-right: auto;
@@ -537,12 +540,14 @@ body {
   margin-left: 70px;
 }
 .join-title {
+  display: inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #ffffff;
-  margin: 0;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+  margin-top: 0;
   padding: 0;
 }
 .footer-list {
@@ -551,7 +556,6 @@ body {
   margin-right: auto;
   margin-left: auto;
   width: 206px;
-  margin-top: 20px;
 }
 
 .footer-links {
@@ -574,7 +578,7 @@ body {
   margin-right: 10px;
 }
 .icon-footer {
-  fill: #ffffff;
+  fill: var(--primary-white-color);
 }
 .footer-links:hover,
 .footer-links:focus {
